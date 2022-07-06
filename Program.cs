@@ -6,7 +6,7 @@ namespace PontoEletronico
     {
         static void Main(string[] args)
         {
-            Menus.Menu();
+            Menus.Login();
         }
     }
 }

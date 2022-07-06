@@ -4,6 +4,16 @@ namespace PontoEletronico
 {
     class Menus
     {
+        public static void Login()
+        {
+            Console.Clear();
+            Console.WriteLine("Tela de Login");
+            Console.WriteLine("Digite seu Login:");
+            var login = Console.ReadLine();
+            Console.Clear();
+            Console.WriteLine("Senha:");
+            var senha = Console.ReadLine();
+        }
         public static void Menu()
         {
             Console.Clear();
