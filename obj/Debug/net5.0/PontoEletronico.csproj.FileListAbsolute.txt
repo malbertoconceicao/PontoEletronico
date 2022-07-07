@@ -8,9 +8,9 @@ C:\dev\PontoEletronico\bin\Debug\net5.0\PontoEletronico.deps.json
 C:\dev\PontoEletronico\bin\Debug\net5.0\PontoEletronico.runtimeconfig.json
 C:\dev\PontoEletronico\bin\Debug\net5.0\PontoEletronico.runtimeconfig.dev.json
 C:\dev\PontoEletronico\bin\Debug\net5.0\PontoEletronico.dll
-C:\dev\PontoEletronico\bin\Debug\net5.0\ref\PontoEletronico.dll
 C:\dev\PontoEletronico\bin\Debug\net5.0\PontoEletronico.pdb
 C:\dev\PontoEletronico\obj\Debug\net5.0\PontoEletronico.dll
 C:\dev\PontoEletronico\obj\Debug\net5.0\ref\PontoEletronico.dll
 C:\dev\PontoEletronico\obj\Debug\net5.0\PontoEletronico.pdb
 C:\dev\PontoEletronico\obj\Debug\net5.0\PontoEletronico.genruntimeconfig.cache
+C:\dev\PontoEletronico\obj\Debug\net5.0\refint\PontoEletronico.dll
