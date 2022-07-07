@@ -9,10 +9,11 @@ namespace PontoEletronico
             Console.Clear();
             Console.WriteLine("Tela de Login");
             Console.WriteLine("Digite seu Login:");
-            var login = Console.ReadLine();
+            var login = int.Parse(Console.ReadLine());
             Console.Clear();
             Console.WriteLine("Senha:");
-            var senha = Console.ReadLine();
+            var senha = int.Parse(Console.ReadLine());
+            Funcionarios.Autentica(login, senha);
         }
         public static void Menu()
         {
