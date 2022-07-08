@@ -26,13 +26,14 @@ namespace PontoEletronico
     public static void Visualizar()
     {
 
-      using (var file = new StreamReader("C:/dev/marcacao.txt"))
+      using (var file = new StreamReader(@"C:/dev/marcacao.txt", true))
       {
         string marcacao;
         while ((marcacao = file.ReadLine()) != null)
         {
           Console.WriteLine(marcacao);
         }
+        file.Close();
         Menus.MenuVoltar();
       }
     }
