@@ -1,7 +1,4 @@
 using System;
-using System.IO;
-using System.Threading;
-
 namespace PontoEletronico
 {
   class Menus
@@ -28,7 +25,7 @@ namespace PontoEletronico
       switch (opcao)
       {
         case 1: Editor.Salvar(); break;
-        case 2: Console.WriteLine("Em construção"); break;
+        case 2: Editor.Visualizar(); break;
         case 3: System.Environment.Exit(0); break;
         default: Menu(); break;
       }

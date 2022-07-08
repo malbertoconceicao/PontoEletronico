@@ -15,11 +15,26 @@ namespace PontoEletronico
 
       Console.WriteLine($"Ponto batido com sucesso as {hora} em {data}");
 
-      using (var file = new StreamWriter("C:/dev/marcacao.txt"))
+      using (var file = new StreamWriter(@"C:/dev/marcacao.txt", true))
       {
+
         file.WriteLine($"Ponto batido as {hora} em {data}");
       }
       Menus.MenuVoltar();
+    }
+
+    public static void Visualizar()
+    {
+
+      using (var file = new StreamReader("C:/dev/marcacao.txt"))
+      {
+        string marcacao;
+        while ((marcacao = file.ReadLine()) != null)
+        {
+          Console.WriteLine(marcacao);
+        }
+        Menus.MenuVoltar();
+      }
     }
   }
 }
