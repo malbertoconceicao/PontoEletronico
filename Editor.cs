@@ -8,7 +8,7 @@ namespace PontoEletronico
     public static void Salvar()
     {
       var dataAtual = DateTime.Now;
-      var data = String.Format("{0:dd/mm/yyy}", dataAtual);
+      var data = String.Format("{0:dd/MM/yyy}", dataAtual);
       var hora = String.Format("{0:hh:mm:ss}", dataAtual);
 
       Console.Clear();
