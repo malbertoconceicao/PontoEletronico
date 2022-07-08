@@ -1,5 +1,6 @@
 using System;
 using System.IO;
+using System.Threading;
 
 namespace PontoEletronico
 {
@@ -24,14 +25,25 @@ namespace PontoEletronico
       Console.WriteLine("2 - Ver Historico de marcações");
       Console.WriteLine("3 - Sair");
       var opcao = int.Parse(Console.ReadLine());
-
-      var dataAtual = DateTime.Now;
-      var data = String.Format("{0:dd/mm/yyy}", dataAtual);
-      var hora = String.Format("{0:hh:mm:ss}", dataAtual);
-
-      Console.WriteLine($"Ponto batido as {hora} em {data}");
-
-      Editor.Salvar(hora, data);
+      switch (opcao)
+      {
+        case 1: Editor.Salvar(); break;
+        case 2: Console.WriteLine("Em construção"); break;
+        case 3: System.Environment.Exit(0); break;
+        default: Menu(); break;
+      }
+    }
+    public static void MenuVoltar()
+    {
+      Console.WriteLine("1 - Deseja sair?");
+      Console.WriteLine("2 - Voltar ao menu");
+      var opcaoVoltar = int.Parse(Console.ReadLine());
+      switch (opcaoVoltar)
+      {
+        case 1: System.Environment.Exit(0); break;
+        case 2: Menu(); break;
+        default: MenuVoltar(); break;
+      }
     }
   }
 }
