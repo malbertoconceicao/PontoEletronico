@@ -1,4 +1,5 @@
 using System;
+using System.IO;
 
 namespace PontoEletronico
 {
@@ -30,6 +31,7 @@ namespace PontoEletronico
 
       Console.WriteLine($"Ponto batido as {hora} em {data}");
 
+      Editor.Salvar(hora, data);
     }
   }
 }
