@@ -1,10 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "tzteKhCtQY3MdO9EpjNtvlnYIvDVjSf5X92KAEHlE6GxMmFsO3IoPnHV1KLN4jvAoqNZnoZppAfVv2zQR8Adew==",
+  "dgSpecHash": "l9lDl+IbXJircbvdmq4pA1ffNwEQq7AxwMvj8Ip3vjRQxx6iO+HvtZehdpU24UIA4Q1L0GGL3jKa2rNHeHLCQA==",
   "success": true,
   "projectFilePath": "C:\\dev\\PontoEletronico\\PontoEletronico.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\marcosalberto\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.17\\microsoft.netcore.app.host.win-x64.5.0.17.nupkg.sha512"
-  ],
+  "expectedPackageFiles": [],
   "logs": []
 }
