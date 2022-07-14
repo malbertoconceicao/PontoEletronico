@@ -24,7 +24,7 @@ namespace PontoEletronico
       var opcao = int.Parse(Console.ReadLine());
       switch (opcao)
       {
-        case 1: Editor.Salvar(); break;
+        case 1: MenuPonto(); break;
         case 2: Editor.Visualizar(); break;
         case 3: System.Environment.Exit(0); break;
         default: Menu(); break;
@@ -40,6 +40,26 @@ namespace PontoEletronico
         case 1: System.Environment.Exit(0); break;
         case 2: Menu(); break;
         default: MenuVoltar(); break;
+      }
+    }
+    public static void MenuPonto()
+    {
+      Console.Clear();
+      Console.WriteLine("1 - Entrada");
+      Console.WriteLine("2 - Entrada Almoço");
+      Console.WriteLine("3 - Saída Almoço");
+      Console.WriteLine("4 - Saída");
+      Console.WriteLine("5 - Voltar");
+      var opcao = int.Parse(Console.ReadLine());
+
+      switch (opcao)
+      {
+        case 1: Editor.Salvar(1); break;
+        case 2: Editor.Salvar(2); break;
+        case 3: Editor.Salvar(3); break;
+        case 4: Editor.Salvar(4); break;
+        case 5: Menu(); break;
+        default: MenuPonto(); break;
       }
     }
   }

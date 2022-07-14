@@ -5,20 +5,29 @@ namespace PontoEletronico
 {
   class Editor
   {
-    public static void Salvar()
+    public static void Salvar(int opcao)
     {
+      var tipoDeEntrada = " ";
+      switch (opcao)
+      {
+        case 1: tipoDeEntrada = "Entrada"; break;
+        case 2: tipoDeEntrada = "Almoço"; break;
+        case 3: tipoDeEntrada = "Volta almoço"; break;
+        case 4: tipoDeEntrada = "Saída"; break;
+        default: Console.WriteLine("Tipo de entrada errada!"); break;
+      }
       var dataAtual = DateTime.Now;
       var data = String.Format("{0:dd/MM/yyy}", dataAtual);
       var hora = String.Format("{0:hh:mm:ss}", dataAtual);
 
       Console.Clear();
 
-      Console.WriteLine($"Ponto batido com sucesso as {hora} em {data}");
+      Console.WriteLine($"{tipoDeEntrada} batida com sucesso as {hora} em {data}");
 
       using (var file = new StreamWriter(@"C:/dev/marcacao.txt", true))
       {
 
-        file.WriteLine($"Ponto batido as {hora} em {data}");
+        file.WriteLine($"{tipoDeEntrada} as {hora} em {data}");
       }
       Menus.MenuVoltar();
     }
