@@ -3,7 +3,7 @@ using System.IO;
 
 namespace PontoEletronico
 {
-  class Editor
+  public static class Editor
   {
     public static void Salvar(int opcao)
     {

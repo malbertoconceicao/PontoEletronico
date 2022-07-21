@@ -2,7 +2,7 @@ using System;
 
 namespace PontoEletronico
 {
-  class Funcionarios
+  public class Funcionarios
   {
     public static void Autentica(int login, int senha)
     {
@@ -24,7 +24,7 @@ namespace PontoEletronico
         Console.WriteLine("usuário ou senha incorreta!!!");
       }
     }
-    public struct Funcionario
+    public class Funcionario
     {
       public int Id { get; set; }
       public string Nome { get; set; }
